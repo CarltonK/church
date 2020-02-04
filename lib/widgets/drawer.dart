@@ -21,7 +21,7 @@ class AppDrawer extends StatelessWidget {
             ),
           ),
           _createDrawerItem(
-              text: 'Home',
+              text: 'Events',
               onTap: () => Navigator.of(context).pushReplacementNamed('/')),
           _createDrawerItem(
               text: 'Announcements',

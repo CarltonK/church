@@ -11,7 +11,7 @@ class Petitions extends StatefulWidget {
 class _PetitionsState extends State<Petitions> {
   var _myDuration = Duration(microseconds: 500);
   String philipiansQuote =
-      'Let your gentleness be evident to all. The Lord is near';
+      'Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus';
 
   Widget _quoteContainer(String text) {
     return AnimatedContainer(
@@ -30,7 +30,7 @@ class _PetitionsState extends State<Petitions> {
           ),
         ),
       ),
-      height: MediaQuery.of(context).size.height * 0.1,
+      height: MediaQuery.of(context).size.height * 0.15,
       width: MediaQuery.of(context).size.width,
     );
   }
@@ -71,7 +71,7 @@ class _PetitionsState extends State<Petitions> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Phillipians 4:5',
+                    'Phillipians 4:6-7',
                     style: GoogleFonts.breeSerif(fontSize: 22),
                   ),
                 ),
