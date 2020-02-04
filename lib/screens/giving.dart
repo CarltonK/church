@@ -60,6 +60,7 @@ class _GivingState extends State<Giving> {
 }
 
 Widget _titheContainer(BuildContext context) {
+  String tithe = 'Then Jacob took an oath, and said, If God will be with me, and keep me safe on my journey, and give me food and clothing to put on, So that I come again to my father\'s house in peace, then I will take the Lord to be my God, And this stone which I have put up for a pillar will be God\'s house: and of all you give me, I will give a tenth part to you';
   return SingleChildScrollView(
     child: Container(
       padding: EdgeInsets.all(16.0),
@@ -76,6 +77,33 @@ Widget _titheContainer(BuildContext context) {
           SizedBox(
             height: 20,
           ),
+           Container(
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Center(
+                child: Text(
+                  tithe,
+                  style: GoogleFonts.varelaRound(
+                      textStyle: TextStyle(
+                          color: Colors.black, wordSpacing: 1.0, fontSize: 16)),
+                ),
+              ),
+            ),
+            height: MediaQuery.of(context).size.height * 0.2,
+            width: MediaQuery.of(context).size.width,
+          ),
+          Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Genesis 28:20-22',
+                style: GoogleFonts.breeSerif(fontSize: 22),
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
           Padding(
             padding: const EdgeInsets.only(left: 15),
             child: Text(
@@ -203,7 +231,7 @@ Widget _titheContainer(BuildContext context) {
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   contentPadding:
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  labelText: 'Other',
+                  labelText: 'Other amount',
                   labelStyle: GoogleFonts.muli(
                     textStyle: TextStyle(
                       color: Colors.black,
@@ -449,7 +477,7 @@ Widget _donationsContainer(BuildContext context) {
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   contentPadding:
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  labelText: 'Other',
+                  labelText: 'Other amount',
                   labelStyle: GoogleFonts.muli(
                     textStyle: TextStyle(
                       color: Colors.black,
