@@ -1,7 +1,6 @@
 import 'package:catholic_church/screens/clergy.dart';
 import 'package:catholic_church/screens/events.dart';
 import 'package:catholic_church/screens/giving.dart';
-import 'package:catholic_church/screens/home.dart';
 import 'package:catholic_church/screens/petitions.dart';
 import 'package:flutter/material.dart';
 import 'package:catholic_church/screens/announce.dart';
@@ -24,12 +23,10 @@ class _ChurchAppState extends State<ChurchApp> {
         '/announce': (context) => Announcements(),
         '/clergyinfo': (context) => ClergyInfo(),
         '/clergy': (context) => Clergy(),
-        '/events': (context) => Events(),
+        '/': (context) => Events(),
         '/giving': (context) => Giving(),
-        '/': (context) => Home(),
         '/petitions': (context) => Petitions()
       },
     );
   }
 }
-

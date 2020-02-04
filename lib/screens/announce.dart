@@ -38,7 +38,7 @@ class _AnnouncementsState extends State<Announcements> {
             height: 10,
           ),
           Chip(
-            backgroundColor: Colors.grey[200],
+            backgroundColor: Colors.grey[300],
             label: Text(tag),
             avatar: Icon(CupertinoIcons.group_solid),
             padding: EdgeInsets.all(5),
